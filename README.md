@@ -1,4 +1,4 @@
-SSAM Example IPython Notebooks
+SSAM Example Jupyter Notebooks
 ==============================
 
 This repository contains SSAM examples of three mouse brain tissue samples:
