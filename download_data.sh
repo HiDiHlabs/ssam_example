@@ -3,7 +3,7 @@ MERFISH_DIR="${SCRIPTPATH}/zenodo/MERFISH/raw_data"
 OSMFISH_DIR="${SCRIPTPATH}/zenodo/osmFISH/raw_data"
 echo "--- Script for downloading supplemental data (20191016) ---"
 echo
-echo "Downloading main supplemental data from Zenodo..."
+echo "Downloading main supplemental data from Zenodo (10.5281/zenodo.3478502)..."
 curl "https://zenodo.org/record/3478502/files/supplemental_data_ssam_2019.zip?download=1" -o ${SCRIPTPATH}/zenodo.zip
 echo
 echo "Decompressing the downloaded file...."
