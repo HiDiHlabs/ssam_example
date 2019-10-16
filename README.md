@@ -8,6 +8,11 @@ This repository contains SSAM examples of three mouse brain tissue samples:
  
 And the diagnostic plots could be found in the following three directories: `diagplots_osmFISH`, `diagplots_MERFISH`, and `diagplots_multiplexed_smFISH`.
 
+Supplemental Data
+=================
+
+The supplemental data used in the notebooks can be automatically downloaded using the script `download_data.sh`.
+
 Citations
 =========
 
