@@ -1,0 +1,3 @@
+[submodule "3d_reconstruction/PoissonRecon"]
+	path = 3d_reconstruction/PoissonRecon
+	url = https://github.com/mkazhdan/PoissonRecon
