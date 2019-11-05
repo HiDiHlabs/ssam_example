@@ -1,7 +1,7 @@
 MERFISH 3D cell-type map reconstruction
 =======================================
 
-This script is to generate 3D cell-type map of the MERFISH data. This script is currently only tested on Linux.
+This script is to generate 3D cell-type map of the MERFISH data. This script was currently only tested on Linux.
 
 Usage
 -----
