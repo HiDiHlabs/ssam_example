@@ -9,7 +9,7 @@ with open("obj_ct_dic.pkl", "rb") as f:
     obj_ct_dic = pickle.load(f)
 with open("denovo_celltype_colors.pkl", "rb") as f:
     colors = [np.round(np.array(to_rgba(c))*255).astype(int) for c in pickle.load(f)]
-print(colors)
+#print(colors)
 
 all_vertices = []
 all_faces = []
