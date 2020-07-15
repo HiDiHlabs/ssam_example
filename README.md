@@ -8,6 +8,9 @@ This repository contains SSAM examples of three mouse brain tissue samples:
  
 And the diagnostic plots could be found in the following three directories: `diagplots_osmFISH`, `diagplots_MERFISH`, and `diagplots_multiplexed_smFISH`.
 
+Note:
+- To replicate the results in this repo, please use the package python-louvain == 0.13 (The newer version, python-louvain 0.14, uses a different randomization algorithm).
+
 Supplemental Data
 =================
 
