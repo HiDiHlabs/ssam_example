@@ -2,20 +2,21 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 MERFISH_DIR="${SCRIPTPATH}/zenodo/MERFISH/raw_data"
 OSMFISH_DIR="${SCRIPTPATH}/zenodo/osmFISH/raw_data"
 
-function download_file {
+download_file() {
+  yn="y"
   if [ -f "$2" ]; then
-    read -p "$2 exists. Do you want to download it again (y/n)?" yn
-    case $yn in
-      [Yy]*)
-        curl "$1" -o "$2"
-        ;;
-      [Nn]*)
-        ;;
-      *)
-        echo "Please answer y or n."
-        ;;
-    esac
+    read -p "$2 exists. Do you want to download it again [y/n]? " yn
   fi
+  case $yn in
+    [Yy]*)
+      curl -L --retry 5 "$1" -o "$2"
+      ;;
+    [Nn]*)
+      ;;
+    *)
+      echo "Please answer y or n."
+      ;;
+  esac
 }
 
 echo "--- Script for downloading supplemental data (20220108) ---"
